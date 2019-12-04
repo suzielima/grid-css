@@ -1,3 +1,5 @@
+/*@media queries vc diz o comportamento da tela qdo tiver tais resoluções definidas*/
+/*mobile*/
 @media screen and (min-width: 0) {
     .destaques__principal, .destaques__categorias {
         grid-column: 1 / 5;
@@ -38,6 +40,7 @@
         width: 100%;
     }
 }
+/*tablets*/
 @media screen and (min-width: 768px) {
     .destaques__principal {
         grid-column: 1 / 4;
@@ -81,11 +84,13 @@
         width: calc(50% - 1rem);
     }
 }
+/*desktop mais antigos*/
 @media screen and (min-width: 992px) {
     .populares__card {
         width: calc(33.33% - 1rem);
     }
 }
+/*desktop com telas maiores*/
 @media screen and (min-width: 1200px) {
     .populares__card {
         margin-bottom: 0; 
